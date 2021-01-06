@@ -1,0 +1,112 @@
+@import "../resources/_include-media.scss";
+
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+button{
+  outline: none;
+  border: none;
+  font-family: inherit;
+  transition: 0.3s;
+  color: white;
+  line-height: 1;
+  font-family: Arial, sans-serif
+}
+button:hover {
+  
+}
+button:focus { }
+button:active { }
+
+@include media('<phone') {
+  button {
+    font-size: 18px;
+    border-radius: 10px;
+    width: 180px;
+    height: 40px;
+  }
+
+  .log {
+    
+  }
+
+  #logout {
+    width: 150px;
+    letter-spacing: 1px;
+  }
+  #login {
+    width: 160px;
+    height: 50px;
+    letter-spacing: 2px;
+  }
+}
+
+@include media('>=phone') {
+  button {
+    font-size: 18px;
+    border-radius: 10px;
+    width: 180px;
+    height: 40px;
+  }
+  
+  #logout {
+    width: 150px;
+    letter-spacing: 1px;
+  }
+
+  #login {
+    width: 215px;
+    height: 61px;
+    font-size: 24px;
+    letter-spacing: 4px;
+  }
+}
+
+.log {
+  font-weight: 700;
+  
+}
+
+#create {
+  background: #3335bd;
+}
+
+#create:hover {
+  background: #4044fc;
+}
+
+#create:active {
+  background: #242683;
+}
+
+#logout {
+  background: #bb6060;
+  margin: 2em 0 2em 0;
+  font-weight: 600;
+}
+
+#logout:hover {
+  background: #e26363;
+}
+
+#logout:active {
+  background: #a03e3e;
+}
+
+#login {
+  background: #06b850;
+}
+
+#login:hover {
+  background: #09db61
+}
+
+#login:active {
+  background: #068a3d
+}
+

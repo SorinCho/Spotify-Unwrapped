@@ -1,0 +1,54 @@
+{
+  "name": "spotify-unwrapped",
+  "version": "1.0.0",
+  "description": "Data visualization and playlist creation of your top tracks and artists",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "start_local": "nodemon -r dotenv/config app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd react-ui/ && npm install && npm run build"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "react-ui/node_modules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SorinCho/Spotify-Backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SorinCho/Spotify-Backend/issues"
+  },
+  "homepage": "https://github.com/SorinCho/Spotify-Backend#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.10.16",
+    "passport": "^0.4.1",
+    "passport-spotify": "^1.1.0",
+    "query-string": "^6.13.7",
+    "request": "^2.88.2",
+    "spotify-web-api-node": "^5.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.2.0"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "semi": false,
+    "singleQuote": true
+  }
+}
