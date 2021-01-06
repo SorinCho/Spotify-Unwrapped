@@ -33,7 +33,7 @@ if (!isDev && cluster.isMaster) {
   const app = express();
 
   // Priority serve any static files.
-  app.use(express.static(path.resolve(__dirname, '../react-ui/build')));
+  app.use(express.static(path.resolve(__dirname, '/react-ui/build')));
 
   // Answer API requests.
   // app.get('/api', function (req, res) {
@@ -116,7 +116,7 @@ app.use('/auth', authRoutes);
 // });
 // connect react to nodejs express server
 app.get('*', function(request, response) {
-  response.sendFile(path.resolve(__dirname, '../react-ui/build', 'index.html'));
+  response.sendFile(path.resolve(__dirname, '/react-ui/build', 'index.html'));
 });
 
 app.listen(PORT, function () {
